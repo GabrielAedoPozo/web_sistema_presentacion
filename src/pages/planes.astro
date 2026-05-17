@@ -1,0 +1,190 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+    <main class="relative min-h-screen overflow-hidden bg-[url('/img/background.png')] bg-cover bg-center bg-no-repeat px-4 py-10 text-center">
+        <div class="absolute inset-0 bg-white/50"></div>
+
+        <div class="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center">
+            <!-- Badge superior -->
+            <div class="inline-flex items-center rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1 text-[0.65rem] font-semibold tracking-[0.15em] text-blue-600">
+                PRECIOS SIMPLES, VALOR REAL
+            </div>
+
+            <!-- Título y subtítulo -->
+            <div class="mt-4 flex w-full max-w-4xl flex-col items-center text-center">
+                <h1 class="text-6xl font-medium leading-[1.1] text-slate-900">
+                    Planes diseñados <br>
+                    para hacer <span class="pages-title">crecer tu negocio.</span>
+                </h1>
+                <p class="mt-3 text-sm text-slate-600">
+                    Elige el plan que mejor se adapte a ti. <br>
+                    Sin contratos. Sin complicaciones. Cancela cuando quieras.
+                </p>
+            </div>
+
+            <!-- Tarjetas de planes -->
+            <div class="mt-8 grid w-full max-w-6xl grid-cols-1 gap-6 md:grid-cols-3">
+
+                <!-- Plan Básico -->
+                <div class="relative rounded-3xl border border-slate-200/80 bg-white/70 p-8 text-left shadow-sm backdrop-blur-sm transition hover:shadow-md">
+                    <div class="flex items-start gap-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25M21 7.5v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900 leading-tight">Starter</h3>
+                            <p class="mt-1 text-sm text-slate-500 leading-snug">Ideal para negocios <br>que están comenzando.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-7 flex items-end gap-1">
+                        <span class="text-xl font-medium text-slate-700 mb-1">S/</span>
+                        <span class="text-5xl font-semibold text-slate-900 leading-none">99</span>
+                        <span class="mb-1 text-sm text-slate-500">/mes</span>
+                    </div>
+                    <p class="mt-1 text-sm text-slate-500">Facturación mensual</p>
+
+                    <button class="mt-6 w-full rounded-lg border border-blue-300 bg-white py-3 text-sm font-medium text-blue-600 transition hover:bg-blue-50">
+                        Comenzar ahora →
+                    </button>
+
+                    <ul class="mt-7 space-y-3 text-sm text-slate-700">
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Facturación electrónica</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Inventario básico</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Dashboard básico</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Reportes extraíbles a excel.</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> 3 usuario incluido</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Roles Personalizados</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Comandas</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Max. 200 productos</li>
+                    </ul>
+                </div>
+
+                <!-- Plan Profesional (destacado) -->
+                <div class="relative rounded-3xl border-2 border-blue-300 bg-gradient-to-b from-blue-50/80 to-white/80 p-8 text-left shadow-xl shadow-blue-200/50 backdrop-blur-sm md:-mt-3">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-3 py-1 text-[0.65rem] font-semibold text-white shadow-lg shadow-blue-300">
+                        Más popular
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-900 leading-tight">Pro</h3>
+                            <p class="mt-1 text-sm text-slate-500 leading-snug">Para negocios en crecimiento <br>que necesitan más control.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-7 flex items-end gap-1">
+                        <span class="text-xl font-medium text-slate-700 mb-1">S/</span>
+                        <span class="text-5xl font-semibold text-blue-600 leading-none">199</span>
+                        <span class="mb-1 text-sm text-slate-500">/mes</span>
+                    </div>
+                    <p class="mt-1 text-sm text-slate-500">Facturación mensual</p>
+
+                    <button class="mt-6 w-full rounded-lg bg-blue-600 py-3 text-sm font-medium text-white shadow-lg shadow-blue-300 transition hover:bg-blue-700">
+                        Comenzar ahora →
+                    </button>
+
+                    <ul class="mt-7 space-y-3 text-sm text-slate-700">
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Todo lo del plan Básico</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Inventario avanzado</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Dashboard avanzado</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Reportes en Excel de lo que el usuario necesite o pida.</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Hasta 5 usuarios</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Soporte prioritario</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Max 550 productos</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Auditoría</li>
+                    </ul>
+                </div>
+
+                <!-- Plan Empresarial -->
+                <div class="relative rounded-3xl border border-slate-200/80 bg-white/70 p-8 text-left shadow-sm backdrop-blur-sm transition hover:shadow-md">
+                    <div class="flex items-start gap-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl pages-title font-semibold">Plan AI Premium</h3>
+                            <p class="mt-1 text-sm text-slate-500 leading-snug">Para empresas que necesitan <br>máximo rendimiento.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-7 flex items-end gap-1">
+                        <span class="text-xl font-medium text-slate-700 mb-1">S/</span>
+                        <span class="text-5xl font-semibold text-slate-900 leading-none">479</span>
+                        <span class="mb-1 text-sm text-slate-500">/mes</span>
+                    </div>
+                    <p class="mt-1 text-sm text-slate-500">Facturación mensual</p>
+
+                    <button class="mt-6 w-full rounded-lg border border-blue-300 bg-white py-3 text-sm font-medium text-blue-600 transition hover:bg-blue-50">
+                        Comenzar ahora →
+                    </button>
+
+                    <ul class="mt-7 space-y-3 text-sm text-slate-700">
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Todo lo del plan Profesional</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Usuarios ilimitados</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Reportes personalizados</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Auditoría y logs avanzados</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Integraciones API</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Soporte 24/7 dedicado</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Productos ilimitados</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> Actualizaciones Extraordinarias Semanales</li>
+                        <li class="flex items-center gap-2.5"><span class="check-icon"></span> <span class="pages-title">Integración de un chat con agente de IA</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</Layout>
+
+<style>
+    .check-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 9999px;
+        background-color: #2563eb;
+        position: relative;
+        flex-shrink: 0;
+    }
+    .check-icon::after {
+        content: "";
+        width: 0.3rem;
+        height: 0.55rem;
+        border-right: 1.5px solid white;
+        border-bottom: 1.5px solid white;
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    .check-inline {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 9999px;
+        background-color: #2563eb;
+        position: relative;
+    }
+    .check-inline::after {
+        content: "";
+        width: 0.35rem;
+        height: 0.6rem;
+        border-right: 1.5px solid white;
+        border-bottom: 1.5px solid white;
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+</style>
