@@ -53,9 +53,7 @@
 				</div>
 				<p class="mt-3 text-xs font-medium text-slate-500">78% de capacidad</p>
 			</article>
-		</div>
 
-		<div class="absolute right-6 top-1/2 z-30 hidden w-64 -translate-y-1/2 flex-col gap-6 xl:flex">
 			<article class="group rounded-2xl border border-white/70 bg-white/60 p-4 shadow-[0_12px_36px_rgba(15,23,42,0.08)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:bg-white/78 hover:shadow-[0_24px_60px_rgba(37,99,235,0.16)]">
 				<div class="flex items-start justify-between gap-4">
 					<div>
@@ -111,7 +109,7 @@
 
 		<div class="relative z-20 mx-auto flex max-w-245 flex-col items-center justify-center text-center">
 
-			<h1 class="mt-6 text-[clamp(2.1rem,7vw,5.8rem)] font-medium leading-[0.9] tracking-[-0.07em] text-transparent bg-clip-text drop-shadow-[0_0_25px_rgba(59,130,246,0.18)] bg-[linear-gradient(135deg,#020617_10%,#0f172a_25%,#1d4ed8_58%,#60a5fa_82%,#bae6fd_100%)]">
+			<h1 class="hero-title hero-title-color drop-shadow-[0_0_25px_rgba(59,130,246,0.18)]">
 				<span class="block">Control total.</span>
 				<span class="block">Crecimiento real.</span>
 			</h1>
@@ -131,7 +129,7 @@
 					</svg>
 				</a>
 
-				<a href="#" class="group inline-flex items-center gap-3 rounded-full border border-blue-200/80 bg-white/60 px-8 py-4 text-[1rem] font-semibold text-slate-800 shadow-[0_10px_24px_rgba(18,35,94,0.08)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/78 hover:shadow-[0_18px_38px_rgba(18,35,94,0.12)]">
+				<a href="/planes" class="group inline-flex items-center gap-3 rounded-full border border-blue-200/80 bg-white/60 px-8 py-4 text-[1rem] font-semibold text-slate-800 shadow-[0_10px_24px_rgba(18,35,94,0.08)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/78 hover:shadow-[0_18px_38px_rgba(18,35,94,0.12)]">
 					<span class="flex h-7 w-7 items-center justify-center rounded-full border border-slate-900/20 bg-white/80 text-[0.7rem] text-slate-800 transition-transform duration-300 group-hover:scale-105">▶</span>
 					<span>Ver Planes</span>
 				</a>
@@ -150,11 +148,11 @@
 					<div class="h-3 w-3 rounded-full bg-slate-200"></div>
 				</div>
 
-				<div class="bg-slate-100/50 p-3 sm:p-4">
+				<div class="flex items-center justify-center bg-slate-100/50 p-3 sm:p-4">
 					<img
-						src="/img/pos-system-img.png"
+						src="/img/gapsystem2.png"
 						alt="Vista previa del sistema POS"
-						class="aspect-video w-full rounded-[1.35rem] object-cover object-top shadow-[0_12px_35px_rgba(15,23,42,0.15)]"
+						class="h-auto w-full rounded-[1.35rem] object-contain object-top shadow-[0_12px_35px_rgba(15,23,42,0.15)]"
 					/>
 				</div>
 			</div>
@@ -162,8 +160,107 @@
 	</div>
 </section>
 
-<section class="mt-50 ml-10">    
+<section class="flex justify-center items-center pt-10 flex-col gap-10">
+	<div class="flex flex-col gap-4">
+		<h2 class="hero-title-color text-5xl font-medium text-center">Todo lo que tu negocio necesita, <br> en un solo lugar </h2>
+		<p class="text-center text-slate-600">GAP System centraliza y simplifica cada proceso para que tomes <br> mejores decisiones y hagas crecer tu negocio.</p>
+	</div>
+
+	<div class="flex flex-col gap-6 relative">
+		<!-- Sombra de fondo para fila superior -->
+		<div class="absolute -top-20 left-1/2 -translate-x-1/2 w-full max-w-5xl h-64 bg-gradient-to-b from-blue-600/40 to-transparent blur-3xl pointer-events-none"></div>
+		
+		<div class="flex flex-wrap justify-center gap-8 relative z-10">
+			<div class="border-2 border-slate-300 rounded-2xl p-12 flex flex-col gap-4 w-[380px]">
+				<div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg p-4 w-fit text-white"><i class="fa-solid fa-file text-3xl"></i></div>
+				<div>
+					<h3 class="text-2xl font-medium">Facturación Inteligente</h3>
+					<p class="text-slate-600">Emite boletas u facturas en segundos. Cumple con SUNAT y mantén todo en orden.</p>
+				</div>
+			</div>
+
+			<div class="border-2 border-slate-300 rounded-2xl p-12 flex flex-col gap-4 w-[380px]">
+				<div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg p-4 w-fit text-white"><i class="fa-solid fa-cube text-3xl"></i></div>
+				<div>
+					<h3 class="text-2xl font-medium">Inventario en Tiempo Real</h3>
+					<p class="text-slate-600">Controla tu stock al instante. Evita pérdidas y mantene tu negocio siempre abastecido.</p>
+				</div>
+			</div>
+
+			<div class="border-2 border-slate-300 rounded-2xl p-12 flex flex-col gap-4 w-[380px]">
+				<div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg p-4 w-fit text-white"><i class="fa-solid fa-chart-pie text-3xl"></i></div>
+				<div>
+					<h3 class="text-2xl font-medium">Dashboard Avanzado</h3>
+					<p class="text-slate-600">Visualiza tus métricas más importantes con gráficos claros y actualizados en tiempo real.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sombra de fondo para fila inferior -->
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-full max-w-5xl h-64 bg-gradient-to-b from-blue-600/40 to-transparent blur-3xl pointer-events-none"></div>
+		
+		<div class="flex flex-wrap justify-center gap-8 relative z-10">
+			<div class="border-2 border-slate-300 rounded-2xl p-12 flex flex-col gap-4 w-[380px]">
+				<div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg p-4 w-fit text-white"><i class="fa-solid fa-percent text-3xl"></i></div>
+				<div>
+					<h3 class="text-2xl font-medium">Corrección de IGV</h3>
+					<p class="text-slate-600">Realiza ajustes de IGV de manera fácil y rápida. Mantén tu contabilidad siempre al día.</p>
+				</div>
+			</div>
+
+			<div class="border-2 border-slate-300 rounded-2xl p-12 flex flex-col gap-4 w-[380px]">
+				<div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg p-4 w-fit text-white"><i class="fa-solid fa-chart-bar text-3xl"></i></div>
+				<div>
+					<h3 class="text-2xl font-medium">Reportes Detallados</h3>
+					<p class="text-slate-600">Genera reportes personalizados y exporta los datos que necesitas en un clic.</p>
+				</div>
+			</div>
+
+			<div class="border-2 border-slate-300 rounded-2xl p-12 flex flex-col gap-4 w-[380px]">
+				<div class="bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg p-4 w-fit text-white"><i class="fa-solid fa-users text-3xl"></i></div>
+				<div>
+					<h3 class="text-2xl font-medium">Multiusuario y Roles</h3>
+					<p class="text-slate-600">Gestiona tu equipo con diferentes permisos y niveles de acceso de forma segura.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+<section class="py-20 px-6 border-t border-slate-100">
+	<div class="max-w-7xl mx-auto flex flex-col items-center gap-4">
+
+		<span class="text-sm font-medium tracking-wide text-slate-400 uppercase">
+			Powered by
+		</span>
+
+		<div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+
+			<img
+				src="/img/mysql.png"
+				alt="MySQL"
+				class="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+			/>
+			<img
+				src="/img/nodejs.webp"
+				alt="Node.js"
+				class="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+			/>
+			<img
+				src="/img/sunat.png"
+				alt="SUNAT"
+				class="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+			/>
+			<img
+				src="/img/railway.svg"
+				alt="Railway"
+				class="h-14 lg:h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+			/>
+
+		</div>
+	</div>
+</section>
+
+
 
 <style>
 	.hero-backdrop {
@@ -173,5 +270,91 @@
 		mask-repeat: no-repeat;
 		-webkit-mask-size: 100% 100%;
 		mask-size: 100% 100%;
+	}
+
+	.pricing-spotlight {
+		position: relative;
+	}
+
+	.pricing-stage {
+		position: relative;
+		overflow: hidden;
+		background:
+			linear-gradient(180deg, #ffffff, #ffffff) padding-box,
+			linear-gradient(135deg, rgba(125, 182, 255, 0.75) 0%, rgba(59, 130, 246, 0.9) 45%, rgba(186, 230, 253, 0.8) 100%) border-box;
+		border: 1px solid transparent;
+		box-shadow: 0 26px 80px rgba(37, 99, 235, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+	}
+
+	.pricing-stage::before {
+		content: "";
+		position: absolute;
+		inset: -28% -18% -18% -18%;
+		background:
+			radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.28) 0%, rgba(96, 165, 250, 0.12) 28%, rgba(59, 130, 246, 0.06) 48%, transparent 74%),
+			radial-gradient(circle at 72% 28%, rgba(125, 211, 252, 0.22) 0%, transparent 42%);
+		filter: blur(58px);
+		animation: pulseGlow 6s ease-in-out infinite;
+	}
+
+	.pricing-stage::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background:
+			radial-gradient(circle at 12% 20%, rgba(59, 130, 246, 0.14) 0%, transparent 42%),
+			radial-gradient(circle at 88% 76%, rgba(14, 165, 233, 0.12) 0%, transparent 45%),
+			radial-gradient(rgba(30, 64, 175, 0.08) 0.7px, transparent 0.7px);
+		background-size: auto, auto, 3px 3px;
+		opacity: 0.42;
+		pointer-events: none;
+	}
+
+	.pricing-core {
+		z-index: 1;
+	}
+
+	.pricing-value {
+		font-size: clamp(3.1rem, 9vw, 7.2rem);
+		font-weight: 500;
+		line-height: 0.95;
+		letter-spacing: -0.05em;
+		color: transparent;
+		background-image: linear-gradient(135deg, #0f172a 8%, #1e3a8a 33%, #2563eb 60%, #7dd3fc 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		text-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+	}
+
+	.pricing-currency {
+		font-size: 0.76em;
+		margin-right: 0.04em;
+	}
+
+	.pricing-cents {
+		font-size: 0.34em;
+		margin-left: 0.08em;
+		opacity: 0.88;
+	}
+
+	.pricing-period {
+		font-size: clamp(1.1rem, 2vw, 2rem);
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		margin-left: 0.22em;
+		opacity: 0.92;
+		vertical-align: baseline;
+	}
+
+	@keyframes pulseGlow {
+		0%,
+		100% {
+			transform: scale(0.94);
+			opacity: 0.4;
+		}
+		50% {
+			transform: scale(1.06);
+			opacity: 0.72;
+		}
 	}
 </style>

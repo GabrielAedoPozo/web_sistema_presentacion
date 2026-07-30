@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import PlanesMenu from "../components/planes-menu.astro"
 ---
 
 <Layout>
     <main class="relative min-h-screen overflow-hidden bg-[url('/img/background.png')] bg-cover bg-center bg-no-repeat px-4 py-10 text-center">
         <div class="absolute inset-0 bg-white/50"></div>
+
+        <PlanesMenu />
 
         <div class="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center">
             <!-- Badge superior -->
@@ -65,7 +68,7 @@ import Layout from "../layouts/Layout.astro"
                 </div>
 
                 <!-- Plan Profesional (destacado) -->
-                <div class="relative rounded-3xl border-2 border-blue-300 bg-gradient-to-b from-blue-50/80 to-white/80 p-8 text-left shadow-xl shadow-blue-200/50 backdrop-blur-sm md:-mt-3">
+                <div class="relative rounded-3xl border-2 border-blue-300 bg-linear-to-b from-blue-50/80 to-white/80 p-8 text-left shadow-xl shadow-blue-200/50 backdrop-blur-sm md:-mt-3">
                     <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-blue-600 px-3 py-1 text-[0.65rem] font-semibold text-white shadow-lg shadow-blue-300">
                         Más popular
                     </div>
